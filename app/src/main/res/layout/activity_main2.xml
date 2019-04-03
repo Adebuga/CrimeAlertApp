@@ -9,8 +9,7 @@
         android:id="@+id/frag_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_nav"
-        android:background="@color/bgcolor"/>
+        android:layout_above="@+id/bottom_nav" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -19,5 +18,7 @@
         app:menu="@menu/menu2"
         android:layout_alignParentBottom="true"
         android:background="@android:color/white"
-        android:backgroundTint="@android:color/darker_gray"/>
+        android:backgroundTint="@android:color/darker_gray"
+        app:textStyle="bold"
+        />
 </RelativeLayout>
