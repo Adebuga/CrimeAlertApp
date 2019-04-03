@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_applications_black_24dp"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/about"
+        android:title="About Us"
+        app:showAsAction="never"/>
+    <item android:id="@+id/langua"
+        android:icon="@drawable/ic_language_black_24dp"
+        android:title="Languages"
+        app:showAsAction="never"/>
+    <item android:id="@+id/contact"
+        android:title="Contacts"
+        app:showAsAction="never"/>
+    <item android:id="@+id/supp"
+        android:title="Support Us"
+        app:showAsAction="never"/>
+    <item android:id="@+id/layout"
+        android:title="Lagout"
+        app:showAsAction="never"/>
+
+
+</menu>

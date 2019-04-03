@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:title="REPORT CRIME"
+        android:id="@+id/report_nav"
+        android:icon="@drawable/ic_report_black_24dp"/>
+
+    <item android:id="@+id/nav_call"
+          android:title="CALL POLICE"
+          android:icon="@drawable/ic_call_black_24dp"
+          />
+    <item android:icon="@drawable/ic_history_black_24dp"
+          android:id="@+id/nav_history"
+        android:title="HISTORY"/>
+
+
+
+
+</menu>

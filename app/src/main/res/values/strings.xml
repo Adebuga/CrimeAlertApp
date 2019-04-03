@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">CrimeAlertApp</string>
+    <string name="item1">Settings</string>
+    <string name="item2">contacts</string>
+    <string name="item3">Languages</string>
+    <string name="item4">Logout</string>
+    <string name="item5">support Us</string>
+    <string name="item6">About us</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
