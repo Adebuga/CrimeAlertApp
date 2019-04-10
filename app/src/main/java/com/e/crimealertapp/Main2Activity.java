@@ -1,4 +1,5 @@
 package com.e.crimealertapp;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -32,6 +33,11 @@ public class Main2Activity extends AppCompatActivity {
             case R.id.settings:
             case R.id.layout:
             case R.id.langua:
+            case R.id.conn:
+                Intent intent = new Intent(getApplicationContext(),BroadConnection.class);
+                startActivity(intent);
+
+
 
 
         }

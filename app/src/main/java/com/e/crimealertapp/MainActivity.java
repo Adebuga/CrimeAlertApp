@@ -1,13 +1,23 @@
 package com.e.crimealertapp;
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.NetworkInfo;
+import android.service.notification.Condition;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-
-public class MainActivity extends AppCompatActivity {
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity  {
 
 
     @Override
@@ -15,8 +25,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
- }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+        != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_PHONE_STATE},1);
 
+            if(cheConnection())
+            {
+                Toast.makeText(this, "connected", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(this, "Not connected", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+ }
+ private boolean cheConnection(){
+     ConnectivityManager connectivityManager = (ConnectivityManager)
+             getSystemService(Context.CONNECTIVITY_SERVICE);
+     NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+     return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+
+ }
 
     public void clickMe(View view){
         Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
@@ -37,4 +67,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
           }
+          
 }
+

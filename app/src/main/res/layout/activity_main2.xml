@@ -19,6 +19,6 @@
         android:layout_alignParentBottom="true"
         android:background="@android:color/white"
         android:backgroundTint="@android:color/darker_gray"
-        app:textStyle="bold"
+
         />
 </RelativeLayout>
