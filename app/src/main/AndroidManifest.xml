@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.e.crimealertapp">
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,9 +16,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadConnection"></activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignUp"
+            android:label="SignUp"></activity>
+        <activity android:name=".LogInForm"
+            android:label="LoginHere"/>
+        <activity
+            android:name=".MywebView"
+            android:label="GoogleSearch"
+            android:parentActivityName=".Main2Activity" />
+        <activity android:name=".BroadConnection" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="ReportCrime" />
+        <activity
+            android:name=".MainActivity"
+            android:label="WELCOME TO MY REPORT APP">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

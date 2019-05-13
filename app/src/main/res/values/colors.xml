@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#E30518</color>
     <color name="bgcolor">#13172C</color>
+    <color name="MyApptheme">#0D3DF4</color>
+    <color name="mycolor">#EB6258</color>
+    <color name="signup">#F3F2F2</color>
 </resources>

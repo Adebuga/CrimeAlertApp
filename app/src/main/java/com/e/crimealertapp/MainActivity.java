@@ -1,5 +1,6 @@
 package com.e.crimealertapp;
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,18 +14,20 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 public class MainActivity extends AppCompatActivity  {
 
-
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//        progressDialog = new ProgressDialog(this);
+//        progressDialog.setMessage("Please wait......");
+//        progressDialog.setTitle("loading");
+//        progressDialog.show();
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
         != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity  {
  }
 
     public void clickMe(View view){
-        Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
+        Intent intent = new Intent(getApplicationContext(),LogInForm.class);
         startActivity(intent);
     }
     @Override

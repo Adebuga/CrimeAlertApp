@@ -27,6 +27,9 @@
     <item android:id="@+id/conn"
         android:title="Connection"
         app:showAsAction="never"/>
+    <item android:id="@+id/web"
+        android:title="Google Search"
+        app:showAsAction="always"/>
 
 
 </menu>
